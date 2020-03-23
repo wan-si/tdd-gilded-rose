@@ -13,6 +13,8 @@ public class GildedRose {
     int Quality_Decrease_Rate = 1;
     int Quality_Increase_Rate = 1;
 
+    public GildedRose() {
+    }
 
     public GildedRose(ProductItem[] productItems) {
         this.productItems = productItems;
