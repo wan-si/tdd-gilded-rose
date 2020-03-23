@@ -61,17 +61,17 @@ public class GildedRose {
 
         int quality = productItem.getQuality();
 
-        if(productItem.getSellIn() <= 5){
+        if(productItem.getSellIn() <= 0){
+
+            quality = Low_Quality;
+
+        }else if(productItem.getSellIn() <= 5){
 
             quality += 3;
 
         }else if(productItem.getSellIn() <= 10){
 
             quality += 2;
-
-        }else if(productItem.getSellIn() <= 0){
-
-            quality = Low_Quality;
 
         }else{
 
